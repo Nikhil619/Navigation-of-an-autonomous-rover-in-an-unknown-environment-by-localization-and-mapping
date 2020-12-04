@@ -188,7 +188,7 @@ def test():
     if np.array_equal(path1,true_path1):
       print("Path 1 passes")
     else:
-        print "nope, chuck testa"
+        print "nope"
 
     test_map2 = np.array([
              [0, 0, 0, 0, 0, 0, 0, 0],
@@ -222,9 +222,9 @@ def test():
     if np.array_equal(path2,true_path2):
       print("Path 2 passes")
 
-def test_for_grader():
+def tester():
     """
-    Function that provides the test paths for submission
+    Function that provides the test paths 
     """
     test_map1 = np.array([
               [1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -276,22 +276,8 @@ def test_for_grader():
 
 
 def main():
-    test_for_grader()
-    # # Load parameters from yaml
-    # param_path = 'params.yaml' # rospy.get_param("~param_path")
-    # f = open('params.yaml','r')
-    # params_raw = f.read()
-    # f.close()
-    # params = yaml.load(params_raw)
-    # # Get params we need
-    # occupancy_map = np.array(params['occupancy_map'])
-    # pos_init = np.array(params['pos_init'])
-    # pos_goal = np.array(params['pos_goal'])
-    # x_spacing = params['x_spacing']
-    # y_spacing = params['y_spacing']
-    # path = dijkstras(occupancy_map,x_spacing,y_spacing,pos_init,pos_goal)
-    # print(path)
-
+    tester()
+   
 if __name__ == '__main__':
     main()
 
