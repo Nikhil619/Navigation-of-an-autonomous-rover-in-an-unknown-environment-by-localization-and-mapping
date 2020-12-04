@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-# V1.2
 import numpy as np
 
 
