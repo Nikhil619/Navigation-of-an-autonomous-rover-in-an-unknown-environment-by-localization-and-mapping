@@ -60,7 +60,6 @@ class KalmanFilter:
 
         # G = df/dx
         # N = df/dn
-        # Coursera's way
         # if omega == 0.0:
         #     G = np.eye(3) + dt * np.array([[0, 0, -v[0] * np.sin(self.x_t[2, 0])],
         #                                    [0, 0, v[0] * np.cos(self.x_t[2, 0])], [0, 0, 0]])
@@ -69,7 +68,7 @@ class KalmanFilter:
         #     self.x_t_prediction = self.x_t + dt * np.array(
         #         [[v[0] * np.cos(self.x_t[2, 0])], [v[0] * np.sin(self.x_t[2, 0])], [omega]])
         # else:
-        #     # Thurn's way
+        #     
         G = np.eye(3) + np.array([[0, 0, -(v[0] / omega * np.cos(self.x_t[2, 0])) + (v[0] / omega * np.cos(self.x_t[2, 0] + omega * dt))],
                                   [0, 0, -(v[0] / omega * np.sin(self.x_t[2, 0])) + (v[0] / omega * np.sin(self.x_t[2, 0] + omega * dt))],
                                   [0, 0, 0]])
