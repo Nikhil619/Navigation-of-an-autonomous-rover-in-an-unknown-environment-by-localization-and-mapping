@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """
 ROS based interface for the Course Robotics Specialization Capstone Autonomous Rover.
-Updated June 15 2016.
 """
 import rospy
 
