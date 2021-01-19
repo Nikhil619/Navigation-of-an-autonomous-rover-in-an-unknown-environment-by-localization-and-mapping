@@ -2,3 +2,4 @@
 ## Note
 1. in the terminals run: roslaunch robot_launch robot.launch
 2. and roslaunch robot_control robot_control.launch
+3. roslaunch 
