@@ -7,3 +7,7 @@ For the autonomous robots navigation 1 folder
 For the autonomous robots navigation 2 folder
 1. roslaunch launch l1_robot.launch
 2. roslaunch launch l4_PathPlanning.launch
+
+Simulation video files- 
+1. autonomous_slam.mp4
+2. path_planning_demo.mp4
